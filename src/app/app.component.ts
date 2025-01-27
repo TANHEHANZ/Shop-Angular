@@ -8,10 +8,11 @@ import {
 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SenalComponent } from './components/senal/senal.component';
+import { StateglobalComponent } from './components/stateglobal/stateglobal.component';
 @Component({
   standalone: true,
   selector: 'app-root',
-  imports: [RouterOutlet, SenalComponent],
+  imports: [SenalComponent, StateglobalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
