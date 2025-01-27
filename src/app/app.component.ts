@@ -1,12 +1,4 @@
-import {
-  Component,
-  computed,
-  effect,
-  Signal,
-  signal,
-  WritableSignal,
-} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 import { SenalComponent } from './components/senal/senal.component';
 import { StateglobalComponent } from './components/stateglobal/stateglobal.component';
 @Component({
