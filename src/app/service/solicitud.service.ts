@@ -5,8 +5,16 @@ import { config, Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class SolicitudService {
-  constructor(private http: HttpClient) {}
+  user: any[];
+  API_URL = 'https://jsonplaceholder.typicode.com/users';
+  constructor(private http: HttpClient) {
+    this.user = [];
+  }
   getData(): Observable<any> {
     return this.http.get<any>('localhost');
+  }
+
+  getUser(): Observable<any> {
+    return this.http.get<any[]>(this.API_URL);
   }
 }
