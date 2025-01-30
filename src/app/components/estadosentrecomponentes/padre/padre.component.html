@@ -1,4 +1,12 @@
 <h1>Padre componente</h1>
 <app-hijo [data]="dataPadre" />
-<app-bidireccional [data]="dataPadre" (informacion)="resivirMensaje($event)" />
+<app-bidireccional
+  [data]="dataPadre"
+  (informacion)="resivirMensaje($event)"
+  (home)="estado($event)"
+/>
 <p>Mensaje resivido : {{ mensajeRecibido }}</p>
+
+<div [ngClass]="collapsed ? 'collapsado' : 'expandido'">
+  estado{{ collapsed ? "colapsado" : "expandido" }}
+</div>
