@@ -4,13 +4,15 @@ import { StateglobalComponent } from './components/stateglobal/stateglobal.compo
 import { UserComponent } from './components/user/user.component';
 import { PadreComponent } from './components/estadosentrecomponentes/padre/padre.component';
 import { HijoComponent } from './components/estadosentrecomponentes/hijo/hijo.component';
+import { RouterOutlet } from '@angular/router';
 @Component({
   standalone: true,
   selector: 'app-root',
   imports: [
-    SenalComponent,
+    // SenalComponent,
     StateglobalComponent,
     // UserComponent,
+    RouterOutlet,
     PadreComponent,
   ],
   templateUrl: './app.component.html',

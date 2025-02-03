@@ -17,4 +17,8 @@ export class SolicitudService {
   getUser(): Observable<any> {
     return this.http.get<any[]>(this.API_URL);
   }
+  token = 'hay token';
+  isauth() {
+    return this.token.length > 0;
+  }
 }
