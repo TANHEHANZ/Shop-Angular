@@ -1,6 +1,6 @@
 # Editor configuration, see https://editorconfig.org
 root = true
-
+//acá debemos manejar la modificación de las páginas 
 [*]
 charset = utf-8
 indent_style = space
